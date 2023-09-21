@@ -50,6 +50,7 @@ button {
   background-image: url("../images/pool.png");
   border: none;
   color: deeppink;
+  cursor: pointer;
   font-size: 10px;
   width: 200px;
   height: 50px;
@@ -59,14 +60,35 @@ button {
 }
 
 .button3 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: medium;
-}
-  /*Style me! You can test out changing the font, or font size, ...*/
 }
 
 .button4 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: magenta;
+  background-color: yellow;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px grey;
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
+}
+
+.button4:hover {
+  background-color: darkmagenta;
+}
+
+.button4:active {
+  background-color: darkmagenta;
+  box-shadow: 0 4px gray;
+  transform: translateY(4px);
 }
 
 /* Feel free to play around with other properties, as well. */
