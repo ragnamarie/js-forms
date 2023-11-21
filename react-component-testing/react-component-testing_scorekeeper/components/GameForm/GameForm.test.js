@@ -8,9 +8,23 @@ jest.mock("next/router", () => ({
   },
 }));
 
-test("renders two input fields and a button", () => {});
+test("renders two input fields and a button", () => {
+  render(<GameForm onCreateGame={() => {}} />);
 
-test("renders a form with the accessible name 'Create a new game'", () => {});
+  // Check if the input fields are present
+  expect(screen.getByLabelText("Name of game")).toBeInTheDocument();
+  expect(
+    screen.getByLabelText("Player names, separated by comma")
+  ).toBeInTheDocument();
+
+  // Check if the button is present
+  expect(screen.getByText("Create game")).toBeInTheDocument();
+});
+
+test("renders a form with the accessible name 'Create a new game'", () => {
+  // Check if the form header is present
+  expect(screen.getByText("Create a new game")).toBeInTheDocument();
+});
 
 test("submits the correct form data when every field is filled out", async () => {});
 

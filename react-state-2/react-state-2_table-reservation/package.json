@@ -1,7 +1,7 @@
 {
-  "name": "react-props_greeting",
+  "name": "react-state-2_table-reservation",
   "version": "0.0.0-unreleased",
-  "description": "Greeting",
+  "description": "React State 2: Table Reservation",
   "main": "src/index.js",
   "dependencies": {
     "react": "18.2.0",
